@@ -22,3 +22,12 @@ Then it **elaborates** the entity defined by `$TB_ENTITY`
 Finally, the workflow **runs** the simulation. If successful then it will quietly exit with a `0` code.
 If any of the `assert` statements fail then GHDL will cease the simulation and exit with non-zero code; this will also cause the workflow to fail.
 Assert statements of other severity levels will be reported, but not fail the workflow.
+
+
+## Deliverables
+![The waveform created by simulating the ripple adder](Ripple_adder_waveform.png)
+
+![Sketch of the wiring diagram of how the diligent FPGA board will connect to the components of the ripple adder](Ripple_adder_sketch.png)
+
+## Documentation
+For this assignment I used ChatGPT to help me understand the instantatiate step for the top level architecture. I did not understand that you set the pins straight to the LEDs
